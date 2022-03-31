@@ -9,7 +9,7 @@ const fruitsController = require("./controllers/fruits.js")
 const usersController = require("./controllers/users.js")
 
 
-const mongoURI = process.env.MONGODB_URI;
+const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, {}, () => {
   log("connected to mongodb");
 });
